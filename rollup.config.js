@@ -5,7 +5,7 @@ import buble from 'rollup-plugin-buble'
 rimraf.sync('lib')
 
 export default {
-	input: 'src/lib/index.js',
+	input: 'src/index.js',
 	plugins: [
 		buble()
 	],
