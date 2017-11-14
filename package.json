@@ -1,0 +1,41 @@
+{
+  "name": "mono-pub-sub",
+  "version": "1.0.0",
+  "description": "Dead simple implementation of the Publish/Subscribe pattern",
+  "main": "lib/mps.cjs.js",
+  "jsnext:main": "lib/mps.es.js",
+  "files": [
+    "lib/mps.cjs.js",
+    "lib/mps.es.js"
+  ],
+  "author": "Dmitrii Bykov <sukazavr@gmail.com> (https://sukazavr.ru/)",
+  "license": "MIT",
+  "scripts": {
+    "compile": "rollup -c",
+    "prepare": "npm run compile",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sukazavr/mono-pub-sub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sukazavr/mono-pub-sub/issues"
+  },
+  "homepage": "https://github.com/sukazavr/mono-pub-sub#readme",
+  "keywords": [
+    "subscribe",
+    "publish",
+    "publish/subscribe",
+    "pubsub",
+    "pub/sub",
+    "event",
+    "emitter",
+    "eventemitter"
+  ],
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "rollup": "^0.51.5",
+    "rollup-plugin-buble": "^0.17.0"
+  }
+}

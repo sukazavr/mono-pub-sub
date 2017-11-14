@@ -1,0 +1,6 @@
+/.editorconfig
+/.nvmrc
+/.travis.yml
+/rollup.config.js
+/src
+/public

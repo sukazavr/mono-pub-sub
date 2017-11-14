@@ -1,0 +1,26 @@
+language: node_js
+after_success:
+- npm run semantic-release
+branches:
+  except:
+  - /^v\d+\.\d+\.\d+$/
+cache:
+  directories:
+  - node_modules
+notifications:
+  webhooks:
+    on_success: always
+    on_failure: always
+    on_start: never
+    on_cancel: always
+    on_error: always
+    urls:
+    - https://fathomless-fjord-24024.herokuapp.com/notify
+  email:
+    on_success: never
+    on_failure: always
+    on_start: never
+    on_cancel: never
+    on_error: always
+    recipients:
+    - sukazavr@gmail.com
