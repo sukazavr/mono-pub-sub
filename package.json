@@ -1,6 +1,6 @@
 {
   "name": "mono-pub-sub",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Dead simple implementation of the Publish/Subscribe pattern",
   "main": "lib/mps.cjs.js",
   "jsnext:main": "lib/mps.es.js",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "rimraf": "^2.6.2",
     "rollup": "^0.51.5",
-    "rollup-plugin-buble": "^0.17.0"
+    "rollup-plugin-buble": "^0.17.0",
+    "semantic-release": "^8.2.0"
   }
 }
