@@ -1,4 +1,11 @@
-# mono-pub-sub
+# mono-pub-sub [![Travis Build Status][travis-img]][travis]
+
+<img align="right" width="236" height="63"
+	alt="Logo of MPS"
+	src="https://raw.githubusercontent.com/sukazavr/mono-pub-sub/master/docs/logo-min.png">
+
+[travis-img]: https://img.shields.io/travis/sukazavr/mono-pub-sub.svg?label=unix
+[travis]: https://travis-ci.org/sukazavr/mono-pub-sub
 
 > Dead simple implementation of the Publish/Subscribe pattern
 
