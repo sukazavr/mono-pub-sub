@@ -9,6 +9,8 @@ export default class MPS {
 	}
 
 	on (listener) {
+		if (typeof listener !== 'function')
+			throw new Error('The first argument should be a function')
 		this.__listeners.push(listener)
 		return this.off.bind(this, listener)
 	}
@@ -16,7 +18,7 @@ export default class MPS {
 	off (listener) {
 		const listeners = this.__listeners
 		const index = listeners.indexOf(listener)
-		listeners.splice(index, 1)
+		if (~index) listeners.splice(index, 1)
 		return this
 	}
 
